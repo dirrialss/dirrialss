@@ -51,7 +51,18 @@
 
 ### 🔗 Посилання
 
-*[Розділ містить повний список всіх документів, про які згадується.]*
+1.[Зацікавлена особа](https://uk.wikipedia.org/wiki/Зацікавлена_особа)  
+2. [Інтерфейс користувача](https://uk.wikipedia.org/wiki/Інтерфейс_користувача)  
+3. [Опитування](https://uk.wikipedia.org/wiki/Опитування)  
+4. [Аналітик](https://uk.wikipedia.org/wiki/Аналітик)  
+5. [Респондент](https://uk.wikipedia.org/wiki/Респондент)  
+6. [CRM-система](https://uk.wikipedia.org/wiki/CRM)  
+7. [ERP-система](https://uk.wikipedia.org/wiki/ERP-система)  
+8. [Google Forms](https://www.google.com/forms/about/)  
+9. [SurveyMonkey](https://www.surveymonkey.com/)  
+10. [Power BI](https://powerbi.microsoft.com/)  
+11.[Tableau](https://www.tableau.com/)  
+12. [Google Data Studio](https://datastudio.google.com/)   
 
 
 ## Короткий зміст
