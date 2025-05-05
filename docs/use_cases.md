@@ -12,6 +12,8 @@
 
 <span id="UserUseCase"></span>
 ### Діаграма use case для всіх бізнес акторів
+## Загальна схема
+
 <center style="
     border-radius:4px;
     border: 1px solid #cfd7e6;
@@ -45,10 +47,4 @@
 
 </center>
 
-
-
-
-**Діаграма прецедентів**
-
-</center>
-
+## Схема клієнта
