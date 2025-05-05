@@ -179,7 +179,69 @@
 <p><span id="AdminUseCase"></span></p>
 <h3 id="Діаграма-use-case-адміністратора-системи"><a class="header" href="#Діаграма-use-case-адміністратора-системи">Діаграма use case адміністратора системи</a></h3>
 <p><a href="https://editor.plantuml.com/uml/hPJBJi9058RtJVeE8njqWGzWZ87ererktTGo8WajIIz64XTG5kxKg86TlW8XeAXSNk7CA_WadhbKEgMfQ0oRIPd_ct--7YZxWUK5eTCmZOtWd3gKd3P2MlEibccOXcK7JOyKu0v6C6KzcB4Uwx28jM708fYpDc4TcF17C8OfJ0h4yacbwjHTdjuy3hqBsje-e0qQq1CNxc62e05yO2Q22O4vBFYITM68ZsV8lztY29cGyINdYFfOHu2momZtpp7t0qg5qgpzfdjMzvoA7TIRBXAVEH59GnZZxKOnTOGNlX4S5P1n6LlI3YtNgl5YZxY_J-0rimyt95XokypwmbJ5jfkX6-Ie6i0xIkyY9oAuHFTIl3o0NSCWOKxX4k1STsko5MCL_bUPAlzjC-Pbw4nKnFMKupAAuhd3X6754ufDeqZW2STLtXmdMHRgcuOOM58gxQLVJFgB9Az8w6L0tQfFFjiF2fNtuar3WvFTgr99ctEo4nCpjsfpdDpBgzHTkn5MgUgoIEb_mH-dw25gmbj-JQqJltl6vEFvyP6ceJTR9v5ZR-Kznp9YzqbnwjcgENspFhV_u2wZf5ue8K6RyInllyhmJncxYp_iBm00"><img src="https://img.plantuml.biz/plantuml/svg/hPJBJi9058RtJVeE8njqWGzWZ87ererktTGo8WajIIz64XTG5kxKg86TlW8XeAXSNk7CA_WadhbKEgMfQ0oRIPd_ct--7YZxWUK5eTCmZOtWd3gKd3P2MlEibccOXcK7JOyKu0v6C6KzcB4Uwx28jM708fYpDc4TcF17C8OfJ0h4yacbwjHTdjuy3hqBsje-e0qQq1CNxc62e05yO2Q22O4vBFYITM68ZsV8lztY29cGyINdYFfOHu2momZtpp7t0qg5qgpzfdjMzvoA7TIRBXAVEH59GnZZxKOnTOGNlX4S5P1n6LlI3YtNgl5YZxY_J-0rimyt95XokypwmbJ5jfkX6-Ie6i0xIkyY9oAuHFTIl3o0NSCWOKxX4k1STsko5MCL_bUPAlzjC-Pbw4nKnFMKupAAuhd3X6754ufDeqZW2STLtXmdMHRgcuOOM58gxQLVJFgB9Az8w6L0tQfFFjiF2fNtuar3WvFTgr99ctEo4nCpjsfpdDpBgzHTkn5MgUgoIEb_mH-dw25gmbj-JQqJltl6vEFvyP6ceJTR9v5ZR-Kznp9YzqbnwjcgENspFhV_u2wZf5ue8K6RyInllyhmJncxYp_iBm00" alt="Діаграма use case адміністратора системи" /></a></p>
-
+<h3 id="Таблиця-для-Пройти-опитування"><a class="header" href="#Таблиця-для-Пройти-опитування">Таблиця для "Пройти опитування"</a></h3>
+<div class="table-wrapper"><table><thead><tr><th>ID</th><th>BUC.02.04</th></tr></thead><tbody>
+<tr><td>НАЗВА</td><td>Пройти опитування</td></tr>
+<tr><td>УЧАСНИКИ</td><td>Експерт, система</td></tr>
+<tr><td>ПЕРЕДУМОВИ</td><td>Експерт має бути зареєстрований у системі.</td></tr>
+<tr><td>РЕЗУЛЬТАТ</td><td>Відповіді експерта.</td></tr>
+<tr><td>ВИКЛЮЧНІ СИТУАЦІЇ</td><td>EX.02.04 У користувача зник інтернет.<br>EX.02.07 Експерт двічі натиснув на кнопку "Почати опитування".<br>EX.02.08 Користувач випадково оновив сторінку.</td></tr>
+</tbody></table>
+</div>
+<h3 id="Таблиця-для-Обрати-категорію-експертизи"><a class="header" href="#Таблиця-для-Обрати-категорію-експертизи">Таблиця для "Обрати категорію експертизи"</a></h3>
+<div class="table-wrapper"><table><thead><tr><th>ID</th><th>BUC.02.07</th></tr></thead><tbody>
+<tr><td>НАЗВА</td><td>Обрати категорію експертизи</td></tr>
+<tr><td>УЧАСНИКИ</td><td>Експерт, система</td></tr>
+<tr><td>ПЕРЕДУМОВИ</td><td>Експерт розпочав проходження опитування.</td></tr>
+<tr><td>РЕЗУЛЬТАТ</td><td>Обрана категорія експертизи.</td></tr>
+<tr><td>ВИКЛЮЧНІ СИТУАЦІЇ</td><td>EX.02.09 Категорію не було вибрано.<br>EX.02.10 Категорія недоступна.</td></tr>
+</tbody></table>
+</div>
+<h3 id="Таблиця-для-Перегляд-опитувань"><a class="header" href="#Таблиця-для-Перегляд-опитувань">Таблиця для "Перегляд опитувань"</a></h3>
+<div class="table-wrapper"><table><thead><tr><th>ID</th><th>BUC.02.06</th></tr></thead><tbody>
+<tr><td>НАЗВА</td><td>Перегляд опитувань</td></tr>
+<tr><td>УЧАСНИКИ</td><td>Експерт, система</td></tr>
+<tr><td>ПЕРЕДУМОВИ</td><td>Експерт авторизований у системі.</td></tr>
+<tr><td>РЕЗУЛЬТАТ</td><td>Відображення списку опитувань.</td></tr>
+<tr><td>ВИКЛЮЧНІ СИТУАЦІЇ</td><td>EX.02.05 Не вдалося отримати дані з бази.</td></tr>
+</tbody></table>
+</div>
+<h3 id="Таблиця-для-Змінити-відповідь"><a class="header" href="#Таблиця-для-Змінити-відповідь">Таблиця для "Змінити відповідь"</a></h3>
+<div class="table-wrapper"><table><thead><tr><th>ID</th><th>BUC.02.05</th></tr></thead><tbody>
+<tr><td>НАЗВА</td><td>Змінити відповідь</td></tr>
+<tr><td>УЧАСНИКИ</td><td>Експерт, система</td></tr>
+<tr><td>ПЕРЕДУМОВИ</td><td>Експерт вже пройшов опитування, зміна дозволена.</td></tr>
+<tr><td>РЕЗУЛЬТАТ</td><td>Оновлені відповіді експерта.</td></tr>
+<tr><td>ВИКЛЮЧНІ СИТУАЦІЇ</td><td>EX.02.04 У користувача зник інтернет.<br>EX.02.08 Користувач випадково оновив сторінку.</td></tr>
+</tbody></table>
+</div>
+<h3 id="Таблиця-для-Зберегти"><a class="header" href="#Таблиця-для-Зберегти">Таблиця для "Зберегти"</a></h3>
+<div class="table-wrapper"><table><thead><tr><th>ID</th><th>BUC.02.08</th></tr></thead><tbody>
+<tr><td>НАЗВА</td><td>Зберегти відповідь</td></tr>
+<tr><td>УЧАСНИКИ</td><td>Експерт, система</td></tr>
+<tr><td>ПЕРЕДУМОВИ</td><td>Експерт відповів на питання.</td></tr>
+<tr><td>РЕЗУЛЬТАТ</td><td>Збережена відповідь експерта.</td></tr>
+<tr><td>ВИКЛЮЧНІ СИТУАЦІЇ</td><td>EX.02.11 Не вдалося зберегти відповідь через технічну помилку.</td></tr>
+</tbody></table>
+</div>
+<h3 id="Таблиця-для-Завершити-опитування"><a class="header" href="#Таблиця-для-Завершити-опитування">Таблиця для "Завершити опитування"</a></h3>
+<div class="table-wrapper"><table><thead><tr><th>ID</th><th>BUC.02.09</th></tr></thead><tbody>
+<tr><td>НАЗВА</td><td>Завершити опитування</td></tr>
+<tr><td>УЧАСНИКИ</td><td>Експерт, система</td></tr>
+<tr><td>ПЕРЕДУМОВИ</td><td>Експерт відповів на всі запитання.</td></tr>
+<tr><td>РЕЗУЛЬТАТ</td><td>Опитування завершено, дані збережено.</td></tr>
+<tr><td>ВИКЛЮЧНІ СИТУАЦІЇ</td><td>EX.02.12 Не всі відповіді збережено.<br>EX.02.13 Втрачено з'єднання з сервером.</td></tr>
+</tbody></table>
+</div>
+<h3 id="Таблиця-для-Підтвердити-дію"><a class="header" href="#Таблиця-для-Підтвердити-дію">Таблиця для "Підтвердити дію"</a></h3>
+<div class="table-wrapper"><table><thead><tr><th>ID</th><th>BUC.02.10</th></tr></thead><tbody>
+<tr><td>НАЗВА</td><td>Підтвердити дію</td></tr>
+<tr><td>УЧАСНИКИ</td><td>Експерт, система</td></tr>
+<tr><td>ПЕРЕДУМОВИ</td><td>Виконується дія, що потребує підтвердження.</td></tr>
+<tr><td>РЕЗУЛЬТАТ</td><td>Дія підтверджена та виконана.</td></tr>
+<tr><td>ВИКЛЮЧНІ СИТУАЦІЇ</td><td>EX.02.14 Підтвердження не отримано.<br>EX.02.15 Дія скасована користувачем.</td></tr>
+</tbody></table>
+</div>
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
