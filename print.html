@@ -689,86 +689,54 @@
 <li>🎓 Простота використання навіть для новачків</li>
 </ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="Розроблення-функціональних-вимог-до-системи"><a class="header" href="#Розроблення-функціональних-вимог-до-системи">Розроблення функціональних вимог до системи</a></h1>
-<h2 id="Модель-прецедентів"><a class="header" href="#Модель-прецедентів">Модель прецедентів</a></h2>
-<p>В цьому файлі необхідно перелічити всі документи, розроблені в проекті та дати посилання на них.</p>
-<p><em>Модель прецедентів повинна містити загальні оглядові діаграми та специфікації прецедентів.</em></p>
-<p>Вбудовування зображень діаграм здійснюється з використанням сервісу <a href="https://plantuml.com/">plantuml.com</a>.</p>
-<p>В markdown-файлі використовується опис діаграми</p>
-<p><a href="https://editor.plantuml.com/uml/XPGzJiD048NxIBd3qa4H3e0GuhUZG4XqD8ip14kEBUrk14WK8HHG80g4WaG3Y0iOauZVX2lCteZnEWwxJWoHNCH-xystCsClIyM5QZM3QcL67K0Js5xGWeRWnzLAjS8z5Gc6TpZKRNpJfxgZpp31M9-dJndzPdSaYFbjQFXIWLWztcXoFzWDyPP4RUph6sDgZsmT4tB9y1LZXZqSuZTTNtIzK8ahblxL5wbiZd792h5snJK1NC6AvqMjK56zHp8b8qooCupnWmgUuK1tJ9PZi9CseuOVKi8J9hgBxvaxcGmmEjkunQKyZ4Hz6oIa2DTax-603fFa4D-c2qFyr9UZ0v7KpjYe--ht40_OfuGONtxRnSoDWUuwG1YRECljzEQ0Xmt8ySmmleXjK4RbwejuMo1a5F9WdIi-cJNKfvJqF5gExXXtp6VR7SWetFT5SyLJVfIs_pxjdXbYd-1wUNvFT_LLHcaRxAHr2C1UXMjyCnIVPQlW6F95dhRah5PRchOufLfhHqer4qChLKxbT73OuacjLdnDs0A38mLXNMOE0vKhQV_ivvd2GifqxaOK0oVanJd_PJ0jjKT9OZ_qWbOTnZpEmVzrB5CXym7x0G00"><img src="https://img.plantuml.biz/plantuml/svg/XPGzJiD048NxIBd3qa4H3e0GuhUZG4XqD8ip14kEBUrk14WK8HHG80g4WaG3Y0iOauZVX2lCteZnEWwxJWoHNCH-xystCsClIyM5QZM3QcL67K0Js5xGWeRWnzLAjS8z5Gc6TpZKRNpJfxgZpp31M9-dJndzPdSaYFbjQFXIWLWztcXoFzWDyPP4RUph6sDgZsmT4tB9y1LZXZqSuZTTNtIzK8ahblxL5wbiZd792h5snJK1NC6AvqMjK56zHp8b8qooCupnWmgUuK1tJ9PZi9CseuOVKi8J9hgBxvaxcGmmEjkunQKyZ4Hz6oIa2DTax-603fFa4D-c2qFyr9UZ0v7KpjYe--ht40_OfuGONtxRnSoDWUuwG1YRECljzEQ0Xmt8ySmmleXjK4RbwejuMo1a5F9WdIi-cJNKfvJqF5gExXXtp6VR7SWetFT5SyLJVfIs_pxjdXbYd-1wUNvFT_LLHcaRxAHr2C1UXMjyCnIVPQlW6F95dhRah5PRchOufLfhHqer4qChLKxbT73OuacjLdnDs0A38mLXNMOE0vKhQV_ivvd2GifqxaOK0oVanJd_PJ0jjKT9OZ_qWbOTnZpEmVzrB5CXym7x0G00" alt="UseCase діаграма для користувача" /></a></p>
-<pre><code class="language-md">
-&lt;center style="
-    border-radius:4px;
-    border: 1px solid #cfd7e6;
-    box-shadow: 0 1px 3px 0 rgba(89,105,129,.05), 0 1px 1px 0 rgba(0,0,0,.025);
-    padding: 1em;"
-&gt;
+<p>У цьому розділі містяться діаграми прецедентів, зокрема загальна та конкретизовані, і діаграми активностей.</p>
+<h2 id="Короткий-зміст"><a class="header" href="#Короткий-зміст">Короткий зміст</a></h2>
+<ol>
+<li><a href="use_cases.html#UserUseCase">Діаграма use case для користувача</a></li>
+</ol>
+<h2 id="Діаграми-прецедентів-бізнес-акторів"><a class="header" href="#Діаграми-прецедентів-бізнес-акторів">Діаграми прецедентів бізнес акторів</a></h2>
+<p>Діаграма прецедентів (або діаграма варіантів використання) (англ. Use case diagram) — в UML, діаграма, на якій зображено відношення між акторами та прецедентами в системі.</p>
+<p>Діаграма прецедентів показує різні варіанти використання та різні типи користувачів системи і часто супроводжується іншими типами діаграм. Варіанти використання представлені колами або еліпсами. Актори (дійові особи) часто зображуються у вигляді паличок.</p>
+<p><span id="UserUseCase"></span></p>
+<h3 id="Діаграма-use-case-для-всіх-бізнес-акторів"><a class="header" href="#Діаграма-use-case-для-всіх-бізнес-акторів">Діаграма use case для всіх бізнес акторів</a></h3>
+<pre><code class="language-plantuml">@startuml
+    actor "Користувач" as User #ffed94
 
-@startuml
+    usecase "Створити акаунт" as UC_1.1
+    usecase "Увійти в акаунт" as UC_1.2  
+    usecase "Видалити акаунт" as UC_1.3
+    usecase "Редагувати дані акаунта" as UC_1.4
+    
+    usecase "Зареєструватись за допомогою пошти" as UC_1.1.1
 
-    right header
-        &lt;font size=24 color=black&gt;Package: &lt;b&gt;UCD_3.0
-    end header
-
-    title
-        &lt;font size=18 color=black&gt;UC_8. Редагувати конфігурацію порталу
-        &lt;font size=16 color=black&gt;Діаграма прецедентів
-    end title
-
-
-    actor "Користувач" as User #eeeeaa
+    usecase "Відновити пароль" as UC_1.2.1
     
-    package UCD_1{
-        usecase "&lt;b&gt;UC_1&lt;/b&gt;\nПереглянути список \nзвітів" as UC_1 #aaeeaa
-    }
+    usecase "Підтвердити дію" as UC_1.34.1
     
-    usecase "&lt;b&gt;UC_1.1&lt;/b&gt;\nЗастосувати фільтр" as UC_1.1
-    usecase "&lt;b&gt;UC_1.2&lt;/b&gt;\nПереглянути метадані \nзвіту" as UC_1.2  
-    usecase "&lt;b&gt;UC_1.2.1&lt;/b&gt;\nДати оцінку звіту" as UC_1.2.1  
-    usecase "&lt;b&gt;UC_1.2.2&lt;/b&gt;\nПереглянути інформацію \nпро авторів звіту" as UC_1.2.2
+    usecase "Змінити пароль" as UC_1.4.1
+    usecase "Змінити особисті дані" as UC_1.4.2
     
-    package UCD_1 {
-        usecase "&lt;b&gt;UC_4&lt;/b&gt;\nВикликати звіт" as UC_4 #aaeeaa
-    }
+    User -up-&gt; UC_1.1
+    User -right-&gt; UC_1.2
+    User -down-&gt; UC_1.3
+    User -left-&gt; UC_1.4
     
-    usecase "&lt;b&gt;UC_1.1.1&lt;/b&gt;\n Використати \nпошукові теги" as UC_1.1.1  
-    usecase "&lt;b&gt;UC_1.1.2&lt;/b&gt;\n Використати \nрядок пошуку" as UC_1.1.2
-    usecase "&lt;b&gt;UC_1.1.3&lt;/b&gt;\n Використати \nавторів" as UC_1.1.3  
-    
-    
-    
-    User -&gt; UC_1
-    UC_1.1 .u.&gt; UC_1 :extends
-    UC_1.2 .u.&gt; UC_1 :extends
-    UC_4 .d.&gt; UC_1.2 :extends
-    UC_1.2 .&gt; UC_1.2 :extends
-    UC_1.2.1 .u.&gt; UC_1.2 :extends
-    UC_1.2.2 .u.&gt; UC_1.2 :extends
-    UC_1 ..&gt; UC_1.2.2 :extends
-    
-    
-    UC_1.1.1 -u-|&gt; UC_1.1
-    UC_1.1.2 -u-|&gt; UC_1.1
-    UC_1.1.3 -u-|&gt; UC_1.1
+    UC_1.1.1 ..&gt; UC_1.1 :extends
+    UC_1.2.1 .left.&gt; UC_1.2 :extends
+    UC_1.34.1 &lt;.r. UC_1.3 :includes
+    UC_1.34.1 &lt;.up. UC_1.4 :includes
+    UC_1.4.1 .right.&gt; UC_1.4 :extends
+    UC_1.4.2 ..&gt; UC_1.4 :extends
     
     right footer
-        Аналітичний портал. Модель прецедентів.
+        Модель прецедентів користувача.
         НТУУ КПІ ім.І.Сікорського
-        Киів-2020
+        Київ-2024
     end footer
-
+    
 @enduml
-
-**Діаграма прецедентів**
-
-&lt;/center&gt;
 </code></pre>
-<p>яка буде відображена наступним чином</p>
-<center style="
-    border-radius:4px;
-    border: 1px solid #cfd7e6;
-    box-shadow: 0 1px 3px 0 rgba(89,105,129,.05), 0 1px 1px 0 rgba(0,0,0,.025);
-    padding: 1em;"
-    >
+</center>
 <pre><code class="language-plantuml">@startuml
 
     right header
