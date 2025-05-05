@@ -31,3 +31,67 @@
 ### Діаграма use case адміністратора системи
 [![Діаграма use case адміністратора системи](https://img.plantuml.biz/plantuml/svg/hPJBJi9058RtJVeE8njqWGzWZ87ererktTGo8WajIIz64XTG5kxKg86TlW8XeAXSNk7CA_WadhbKEgMfQ0oRIPd_ct--7YZxWUK5eTCmZOtWd3gKd3P2MlEibccOXcK7JOyKu0v6C6KzcB4Uwx28jM708fYpDc4TcF17C8OfJ0h4yacbwjHTdjuy3hqBsje-e0qQq1CNxc62e05yO2Q22O4vBFYITM68ZsV8lztY29cGyINdYFfOHu2momZtpp7t0qg5qgpzfdjMzvoA7TIRBXAVEH59GnZZxKOnTOGNlX4S5P1n6LlI3YtNgl5YZxY_J-0rimyt95XokypwmbJ5jfkX6-Ie6i0xIkyY9oAuHFTIl3o0NSCWOKxX4k1STsko5MCL_bUPAlzjC-Pbw4nKnFMKupAAuhd3X6754ufDeqZW2STLtXmdMHRgcuOOM58gxQLVJFgB9Az8w6L0tQfFFjiF2fNtuar3WvFTgr99ctEo4nCpjsfpdDpBgzHTkn5MgUgoIEb_mH-dw25gmbj-JQqJltl6vEFvyP6ceJTR9v5ZR-Kznp9YzqbnwjcgENspFhV_u2wZf5ue8K6RyInllyhmJncxYp_iBm00)](https://editor.plantuml.com/uml/hPJBJi9058RtJVeE8njqWGzWZ87ererktTGo8WajIIz64XTG5kxKg86TlW8XeAXSNk7CA_WadhbKEgMfQ0oRIPd_ct--7YZxWUK5eTCmZOtWd3gKd3P2MlEibccOXcK7JOyKu0v6C6KzcB4Uwx28jM708fYpDc4TcF17C8OfJ0h4yacbwjHTdjuy3hqBsje-e0qQq1CNxc62e05yO2Q22O4vBFYITM68ZsV8lztY29cGyINdYFfOHu2momZtpp7t0qg5qgpzfdjMzvoA7TIRBXAVEH59GnZZxKOnTOGNlX4S5P1n6LlI3YtNgl5YZxY_J-0rimyt95XokypwmbJ5jfkX6-Ie6i0xIkyY9oAuHFTIl3o0NSCWOKxX4k1STsko5MCL_bUPAlzjC-Pbw4nKnFMKupAAuhd3X6754ufDeqZW2STLtXmdMHRgcuOOM58gxQLVJFgB9Az8w6L0tQfFFjiF2fNtuar3WvFTgr99ctEo4nCpjsfpdDpBgzHTkn5MgUgoIEb_mH-dw25gmbj-JQqJltl6vEFvyP6ceJTR9v5ZR-Kznp9YzqbnwjcgENspFhV_u2wZf5ue8K6RyInllyhmJncxYp_iBm00)
 
+
+### Таблиця для "Пройти опитування"
+| ID  | BUC.02.04 |
+|-----|-----------|
+| НАЗВА | Пройти опитування |
+| УЧАСНИКИ | Експерт, система |
+| ПЕРЕДУМОВИ | Експерт має бути зареєстрований у системі. |
+| РЕЗУЛЬТАТ | Відповіді експерта. |
+| ВИКЛЮЧНІ СИТУАЦІЇ | EX.02.04 У користувача зник інтернет.<br>EX.02.07 Експерт двічі натиснув на кнопку "Почати опитування".<br>EX.02.08 Користувач випадково оновив сторінку. |
+
+### Таблиця для "Обрати категорію експертизи"
+| ID  | BUC.02.07 |
+|-----|-----------|
+| НАЗВА | Обрати категорію експертизи |
+| УЧАСНИКИ | Експерт, система |
+| ПЕРЕДУМОВИ | Експерт розпочав проходження опитування. |
+| РЕЗУЛЬТАТ | Обрана категорія експертизи. |
+| ВИКЛЮЧНІ СИТУАЦІЇ | EX.02.09 Категорію не було вибрано.<br>EX.02.10 Категорія недоступна. |
+
+### Таблиця для "Перегляд опитувань"
+| ID  | BUC.02.06 |
+|-----|-----------|
+| НАЗВА | Перегляд опитувань |
+| УЧАСНИКИ | Експерт, система |
+| ПЕРЕДУМОВИ | Експерт авторизований у системі. |
+| РЕЗУЛЬТАТ | Відображення списку опитувань. |
+| ВИКЛЮЧНІ СИТУАЦІЇ | EX.02.05 Не вдалося отримати дані з бази. |
+
+### Таблиця для "Змінити відповідь"
+| ID  | BUC.02.05 |
+|-----|-----------|
+| НАЗВА | Змінити відповідь |
+| УЧАСНИКИ | Експерт, система |
+| ПЕРЕДУМОВИ | Експерт вже пройшов опитування, зміна дозволена. |
+| РЕЗУЛЬТАТ | Оновлені відповіді експерта. |
+| ВИКЛЮЧНІ СИТУАЦІЇ | EX.02.04 У користувача зник інтернет.<br>EX.02.08 Користувач випадково оновив сторінку. |
+
+### Таблиця для "Зберегти"
+| ID  | BUC.02.08 |
+|-----|-----------|
+| НАЗВА | Зберегти відповідь |
+| УЧАСНИКИ | Експерт, система |
+| ПЕРЕДУМОВИ | Експерт відповів на питання. |
+| РЕЗУЛЬТАТ | Збережена відповідь експерта. |
+| ВИКЛЮЧНІ СИТУАЦІЇ | EX.02.11 Не вдалося зберегти відповідь через технічну помилку. |
+
+### Таблиця для "Завершити опитування"
+| ID  | BUC.02.09 |
+|-----|-----------|
+| НАЗВА | Завершити опитування |
+| УЧАСНИКИ | Експерт, система |
+| ПЕРЕДУМОВИ | Експерт відповів на всі запитання. |
+| РЕЗУЛЬТАТ | Опитування завершено, дані збережено. |
+| ВИКЛЮЧНІ СИТУАЦІЇ | EX.02.12 Не всі відповіді збережено.<br>EX.02.13 Втрачено з'єднання з сервером. |
+
+### Таблиця для "Підтвердити дію"
+| ID  | BUC.02.10 |
+|-----|-----------|
+| НАЗВА | Підтвердити дію |
+| УЧАСНИКИ | Експерт, система |
+| ПЕРЕДУМОВИ | Виконується дія, що потребує підтвердження. |
+| РЕЗУЛЬТАТ | Дія підтверджена та виконана. |
+| ВИКЛЮЧНІ СИТУАЦІЇ | EX.02.14 Підтвердження не отримано.<br>EX.02.15 Дія скасована користувачем. |
+
