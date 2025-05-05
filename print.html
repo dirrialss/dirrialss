@@ -699,99 +699,35 @@
 <p>Діаграма прецедентів показує різні варіанти використання та різні типи користувачів системи і часто супроводжується іншими типами діаграм. Варіанти використання представлені колами або еліпсами. Актори (дійові особи) часто зображуються у вигляді паличок.</p>
 <p><span id="UserUseCase"></span></p>
 <h3 id="Діаграма-use-case-для-всіх-бізнес-акторів"><a class="header" href="#Діаграма-use-case-для-всіх-бізнес-акторів">Діаграма use case для всіх бізнес акторів</a></h3>
-<pre><code class="language-plantuml">@startuml
-    actor "Користувач" as User #ffed94
+<center style="
+    border-radius:4px;
+    border: 1px solid #cfd7e6;
+    box-shadow: 0 1px 3px 0 rgba(89,105,129,.05), 0 1px 1px 0 rgba(0,0,0,.025);
+    padding: 1em;"
+>
+<p>@startuml</p>
+<pre><code>actor Expert
+actor Client
 
-    usecase "Створити акаунт" as UC_1.1
-    usecase "Увійти в акаунт" as UC_1.2  
-    usecase "Видалити акаунт" as UC_1.3
-    usecase "Редагувати дані акаунта" as UC_1.4
-    
-    usecase "Зареєструватись за допомогою пошти" as UC_1.1.1
+usecase "UserManageAccount\nВзаємодія з\nобліковим записом" as UInteraction
+usecase "SurveyInteraction\nВзаємодія з опитуванням" as EInteraction
+usecase "SurveyCreate\nСтворити\nопитування" as SCreate
+usecase "SurveyDelete\nВидалити\nопитування" as SDelete
+usecase "SurveyManageResults\nВзаємодія\nз результатами" as SResults
+usecase "SurveyShareAccess\nПоділитись\nопитуванням" as SShare
+usecase "SurveyUpdate\nОновлення опитування" as SUpdate
 
-    usecase "Відновити пароль" as UC_1.2.1
-    
-    usecase "Підтвердити дію" as UC_1.34.1
-    
-    usecase "Змінити пароль" as UC_1.4.1
-    usecase "Змінити особисті дані" as UC_1.4.2
-    
-    User -up-&gt; UC_1.1
-    User -right-&gt; UC_1.2
-    User -down-&gt; UC_1.3
-    User -left-&gt; UC_1.4
-    
-    UC_1.1.1 ..&gt; UC_1.1 :extends
-    UC_1.2.1 .left.&gt; UC_1.2 :extends
-    UC_1.34.1 &lt;.r. UC_1.3 :includes
-    UC_1.34.1 &lt;.up. UC_1.4 :includes
-    UC_1.4.1 .right.&gt; UC_1.4 :extends
-    UC_1.4.2 ..&gt; UC_1.4 :extends
-    
-    right footer
-        Модель прецедентів користувача.
-        НТУУ КПІ ім.І.Сікорського
-        Київ-2024
-    end footer
-    
-@enduml
+Expert -d-|&gt; Client
+Expert -&gt; EInteraction
+Client -u-&gt; SResults
+Client -r-&gt; SCreate
+Client -d-&gt; UInteraction
+Client -d-&gt; SDelete
+Client -d-&gt; SUpdate
+Client -l-&gt; SShare
 </code></pre>
+<p>@enduml</p>
 </center>
-<pre><code class="language-plantuml">@startuml
-
-    right header
-        &lt;font size=24 color=black&gt;Package: &lt;b&gt;UCD_3.0
-    end header
-
-    title
-        &lt;font size=18 color=black&gt;UC_8. Редагувати конфігурацію порталу
-        &lt;font size=16 color=black&gt;Діаграма прецедентів
-    end title
-
-
-    actor "Користувач" as User #eeeeaa
-    
-    package UCD_1{
-        usecase "&lt;b&gt;UC_1&lt;/b&gt;\nПереглянути список \nзвітів" as UC_1 #aaeeaa
-    }
-    
-    usecase "&lt;b&gt;UC_1.1&lt;/b&gt;\nЗастосувати фільтр" as UC_1.1
-    usecase "&lt;b&gt;UC_1.2&lt;/b&gt;\nПереглянути метадані \nзвіту" as UC_1.2  
-    usecase "&lt;b&gt;UC_1.2.1&lt;/b&gt;\nДати оцінку звіту" as UC_1.2.1  
-    usecase "&lt;b&gt;UC_1.2.2&lt;/b&gt;\nПереглянути інформацію \nпро авторів звіту" as UC_1.2.2
-    
-    package UCD_1 {
-        usecase "&lt;b&gt;UC_4&lt;/b&gt;\nВикликати звіт" as UC_4 #aaeeaa
-    }
-    
-    usecase "&lt;b&gt;UC_1.1.1&lt;/b&gt;\n Використати \nпошукові теги" as UC_1.1.1  
-    usecase "&lt;b&gt;UC_1.1.2&lt;/b&gt;\n Використати \nрядок пошуку" as UC_1.1.2
-    usecase "&lt;b&gt;UC_1.1.3&lt;/b&gt;\n Використати \nавторів" as UC_1.1.3  
-    
-    
-    
-    User -&gt; UC_1
-    UC_1.1 .u.&gt; UC_1 :extends
-    UC_1.2 .u.&gt; UC_1 :extends
-    UC_4 .d.&gt; UC_1.2 :extends
-    UC_1.2 .&gt; UC_1.2 :extends
-    UC_1.2.1 .u.&gt; UC_1.2 :extends
-    UC_1.2.2 .u.&gt; UC_1.2 :extends
-    UC_1 ..&gt; UC_1.2.2 :extends
-    
-    
-    UC_1.1.1 -u-|&gt; UC_1.1
-    UC_1.1.2 -u-|&gt; UC_1.1
-    UC_1.1.3 -u-|&gt; UC_1.1
-    
-    right footer
-        Аналітичний портал. Модель прецедентів.
-        НТУУ КПІ ім.І.Сікорського
-        Киів-2020
-    end footer
-
-@enduml
-</code></pre>
 <p><strong>Діаграма прецедентів</strong></p>
 </center>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="Проєктування-бази-даних"><a class="header" href="#Проєктування-бази-даних">Проєктування бази даних</a></h1>
