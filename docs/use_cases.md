@@ -2,15 +2,17 @@
 У цьому розділі містяться діаграми прецедентів, зокрема загальна та конкретизовані, і діаграми активностей. 
 
 ## Короткий зміст
-1. [Діаграма use case для користувача](#UserUseCase)
-2. [Діаграма use case дослідника](#ResearcherUseCase)
-3. [Діаграма use case для експерта](#ExpertUseCase)
-4. [Діаграма use case для адміністратора](#AdminUseCase)
-5. [Таблиця для "Створити акаунт користувача"](#CreateAcc)
-6. [Таблиця для "Редагувати дані акаунта"](#EditAC)
-7. [Таблиця для "Видалити акаунт користувача"](#DeleteAC)
-8. [Таблиця для "Створити опитування"](#CreateSurvey)
-9. [Таблиця для "Видалити опитування"](#DeleteSurvey)
+1. [Діаграми прецедентів бізнес акторів](#DPrec)
+2. [Діаграма use case для користувача](#UserUseCase)
+3. [Діаграма use case дослідника](#ResearcherUseCase)
+4. [Діаграма use case для експерта](#ExpertUseCase)
+5. [Діаграма use case для адміністратора](#AdminUseCase)
+6. [Діаграма діяльностей](#DAct)
+7. [Таблиця для "Створити акаунт користувача"](#CreateAcc)
+8. [Таблиця для "Редагувати дані акаунта"](#EditAC)
+9. [Таблиця для "Видалити акаунт користувача"](#DeleteAC)
+10. [Таблиця для "Створити опитування"](#CreateSurvey)
+11. [Таблиця для "Видалити опитування"](#DeleteSurvey)
 7. [Таблиця для "Пройти опитування"](#TakeASurvey)
 8. [Таблиця для "Перегляд опитувань"](#ViewSurvey)
 9. [Таблиця для "Обрати категорію експертизи"](#ChoseExp)
@@ -18,7 +20,9 @@
 11. [Таблиця для "Зберегти"](#Save)
 12. [Таблиця для "Завершити опитування"](#EndSurvey)
 13. [Таблиця для "Підтвердити дію"](#ConfirmAction)
+14. [Посилання](#LinkInfo)
 
+<span id="DPrec"></span>
 ## Діаграми прецедентів бізнес акторів
 Діаграма прецедентів (або діаграма варіантів використання) (англ. Use case diagram) — в UML, діаграма, на якій зображено відношення між акторами та прецедентами в системі.
 
@@ -44,8 +48,7 @@
 [![Діаграма use case адміністратора системи](https://img.plantuml.biz/plantuml/svg/hPJBJi9058RtJVeE8njqWGzWZ87ererktTGo8WajIIz64XTG5kxKg86TlW8XeAXSNk7CA_WadhbKEgMfQ0oRIPd_ct--7YZxWUK5eTCmZOtWd3gKd3P2MlEibccOXcK7JOyKu0v6C6KzcB4Uwx28jM708fYpDc4TcF17C8OfJ0h4yacbwjHTdjuy3hqBsje-e0qQq1CNxc62e05yO2Q22O4vBFYITM68ZsV8lztY29cGyINdYFfOHu2momZtpp7t0qg5qgpzfdjMzvoA7TIRBXAVEH59GnZZxKOnTOGNlX4S5P1n6LlI3YtNgl5YZxY_J-0rimyt95XokypwmbJ5jfkX6-Ie6i0xIkyY9oAuHFTIl3o0NSCWOKxX4k1STsko5MCL_bUPAlzjC-Pbw4nKnFMKupAAuhd3X6754ufDeqZW2STLtXmdMHRgcuOOM58gxQLVJFgB9Az8w6L0tQfFFjiF2fNtuar3WvFTgr99ctEo4nCpjsfpdDpBgzHTkn5MgUgoIEb_mH-dw25gmbj-JQqJltl6vEFvyP6ceJTR9v5ZR-Kznp9YzqbnwjcgENspFhV_u2wZf5ue8K6RyInllyhmJncxYp_iBm00)](https://editor.plantuml.com/uml/hPJBJi9058RtJVeE8njqWGzWZ87ererktTGo8WajIIz64XTG5kxKg86TlW8XeAXSNk7CA_WadhbKEgMfQ0oRIPd_ct--7YZxWUK5eTCmZOtWd3gKd3P2MlEibccOXcK7JOyKu0v6C6KzcB4Uwx28jM708fYpDc4TcF17C8OfJ0h4yacbwjHTdjuy3hqBsje-e0qQq1CNxc62e05yO2Q22O4vBFYITM68ZsV8lztY29cGyINdYFfOHu2momZtpp7t0qg5qgpzfdjMzvoA7TIRBXAVEH59GnZZxKOnTOGNlX4S5P1n6LlI3YtNgl5YZxY_J-0rimyt95XokypwmbJ5jfkX6-Ie6i0xIkyY9oAuHFTIl3o0NSCWOKxX4k1STsko5MCL_bUPAlzjC-Pbw4nKnFMKupAAuhd3X6754ufDeqZW2STLtXmdMHRgcuOOM58gxQLVJFgB9Az8w6L0tQfFFjiF2fNtuar3WvFTgr99ctEo4nCpjsfpdDpBgzHTkn5MgUgoIEb_mH-dw25gmbj-JQqJltl6vEFvyP6ceJTR9v5ZR-Kznp9YzqbnwjcgENspFhV_u2wZf5ue8K6RyInllyhmJncxYp_iBm00)
 
 
-
-
+<span id="DAct"></span>
 ## Діаграма діяльностей
 Діаграмою діяльностей (або діаграмою активностей) називають тип діаграми в UML, який використовується для моделювання послідовності дій, логіки виконання процесів, бізнес-процесів або алгоритмів.
 
@@ -210,6 +213,7 @@
 ### Діаграма до "Підтвердити дію"
 [![Підтвердити дію](https://img.plantuml.biz/plantuml/svg/ZLBBQi905Dq7yWzJkssj4HUY8hwNtHMwZJMeg8bC8jsuy06MRYeKwweF2ls0L8mDFk8ltFcZtXkjM5sqYy3adiUSUvYKQQdSQZNgidHYLRI6nXegDsN9h5NrfihL1YkgDxKoDrfwAMlK3SvEyqfEAHJsAMdEZTij6aahaMXs7xqqB2rpQ5A8PZAvq17Du2MD7pZ9KXkUO2wwi0P7T4IlZJ9AJL0C1h0IOp70xq6C64pfSCR4FNWC1PxeYGuuy2dwXAx561azc90JJ666q0eDXd6oUlN9BYmtv2-mqS4LFOOS-o_n2zY8kHXpZgSH2y3R0TybF13VRFHEL1mui0IxJGOVICSj_nFq4KFEmSF__cvdtrV74XclbYjOJgAOX6SapM21z8aOCtGZtGARkllnYoKkYabPEcTNsQ0I3kQlWo657KNVNKzLE6nRgqlPSU3zreSPZ33Ha6sxw6A8YK_44Z4sAMbtqQUn7sKfIvfUOXIVrZ0jeobBAHpvB_CR)](https://editor.plantuml.com/uml/ZLBBQi905Dq7yWzJkssj4HUY8hwNtHMwZJMeg8bC8jsuy06MRYeKwweF2ls0L8mDFk8ltFcZtXkjM5sqYy3adiUSUvYKQQdSQZNgidHYLRI6nXegDsN9h5NrfihL1YkgDxKoDrfwAMlK3SvEyqfEAHJsAMdEZTij6aahaMXs7xqqB2rpQ5A8PZAvq17Du2MD7pZ9KXkUO2wwi0P7T4IlZJ9AJL0C1h0IOp70xq6C64pfSCR4FNWC1PxeYGuuy2dwXAx561azc90JJ666q0eDXd6oUlN9BYmtv2-mqS4LFOOS-o_n2zY8kHXpZgSH2y3R0TybF13VRFHEL1mui0IxJGOVICSj_nFq4KFEmSF__cvdtrV74XclbYjOJgAOX6SapM21z8aOCtGZtGARkllnYoKkYabPEcTNsQ0I3kQlWo657KNVNKzLE6nRgqlPSU3zreSPZ33Ha6sxw6A8YK_44Z4sAMbtqQUn7sKfIvfUOXIVrZ0jeobBAHpvB_CR)
 
+<span id="LinkInfo"></span>
 ## Посилання 
 **Нижче наведено посилання на використані джерела:**
 
