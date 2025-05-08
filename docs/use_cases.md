@@ -41,6 +41,8 @@
 | РЕЗУЛЬТАТ | Відповіді експерта. |
 | ВИКЛЮЧНІ СИТУАЦІЇ | EX.02.04 У користувача зник інтернет.<br>EX.02.07 Експерт двічі натиснув на кнопку "Почати опитування".<br>EX.02.08 Користувач випадково оновив сторінку. |
 
+[![UseCase діаграма для користувача](//www.plantuml.com/plantuml/dpng/TLBDhj905DxFKuouaOM46AC4DYH6dy5jXV8JQ4jAsR4ePQ4B8yOWnaHZV8En2bIuxNs5xxp2VP9xPbfwBmctgpDdllFzd4vx6bX-C7F6ub4mi1rREfO_5TFHq9rOlkN8TrPdrFUzcTjzvOqzNpxkzJgDnejxY3UU6nHtTVC98URuYWCjS8qjXHJDXL4HeedFY2b2HY4Ix6b9Quhe8ore9H5BdaYuZh355MrQ3Fy9nKTkui3LMbRmYuVVvrs9Z1KIPbWYXaAAb5QLbfR_VKS4DMUYRr0vXfiAEwqiy-7Ju4MsreKiJNoX3Vvn8qEiA-ECyKfY3tNEUZc4SMFuFXXmyg3hFmQrmTzS93vNraiIhXVOqX_s1u703xxPuOX4tpESYmEEz8bNjiqDDSLJoG4Y2g6ARiQ-RyBlj6Rgj5p7azTlQ_LdjVhpAa_ejPT_BcNM_qLMMkfO9VXb0MRJJBq_N_h9WZGXCvChPNz9ETwe2jljIfr8y9ln9gBDPtwTjm00)
+
 ### Таблиця для "Обрати категорію експертизи"
 | ID  | BUC.02.07 |
 |-----|-----------|
