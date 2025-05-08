@@ -179,68 +179,120 @@
 <p><span id="AdminUseCase"></span></p>
 <h3 id="Діаграма-use-case-адміністратора-системи"><a class="header" href="#Діаграма-use-case-адміністратора-системи">Діаграма use case адміністратора системи</a></h3>
 <p><a href="https://editor.plantuml.com/uml/hPJBJi9058RtJVeE8njqWGzWZ87ererktTGo8WajIIz64XTG5kxKg86TlW8XeAXSNk7CA_WadhbKEgMfQ0oRIPd_ct--7YZxWUK5eTCmZOtWd3gKd3P2MlEibccOXcK7JOyKu0v6C6KzcB4Uwx28jM708fYpDc4TcF17C8OfJ0h4yacbwjHTdjuy3hqBsje-e0qQq1CNxc62e05yO2Q22O4vBFYITM68ZsV8lztY29cGyINdYFfOHu2momZtpp7t0qg5qgpzfdjMzvoA7TIRBXAVEH59GnZZxKOnTOGNlX4S5P1n6LlI3YtNgl5YZxY_J-0rimyt95XokypwmbJ5jfkX6-Ie6i0xIkyY9oAuHFTIl3o0NSCWOKxX4k1STsko5MCL_bUPAlzjC-Pbw4nKnFMKupAAuhd3X6754ufDeqZW2STLtXmdMHRgcuOOM58gxQLVJFgB9Az8w6L0tQfFFjiF2fNtuar3WvFTgr99ctEo4nCpjsfpdDpBgzHTkn5MgUgoIEb_mH-dw25gmbj-JQqJltl6vEFvyP6ceJTR9v5ZR-Kznp9YzqbnwjcgENspFhV_u2wZf5ue8K6RyInllyhmJncxYp_iBm00"><img src="https://img.plantuml.biz/plantuml/svg/hPJBJi9058RtJVeE8njqWGzWZ87ererktTGo8WajIIz64XTG5kxKg86TlW8XeAXSNk7CA_WadhbKEgMfQ0oRIPd_ct--7YZxWUK5eTCmZOtWd3gKd3P2MlEibccOXcK7JOyKu0v6C6KzcB4Uwx28jM708fYpDc4TcF17C8OfJ0h4yacbwjHTdjuy3hqBsje-e0qQq1CNxc62e05yO2Q22O4vBFYITM68ZsV8lztY29cGyINdYFfOHu2momZtpp7t0qg5qgpzfdjMzvoA7TIRBXAVEH59GnZZxKOnTOGNlX4S5P1n6LlI3YtNgl5YZxY_J-0rimyt95XokypwmbJ5jfkX6-Ie6i0xIkyY9oAuHFTIl3o0NSCWOKxX4k1STsko5MCL_bUPAlzjC-Pbw4nKnFMKupAAuhd3X6754ufDeqZW2STLtXmdMHRgcuOOM58gxQLVJFgB9Az8w6L0tQfFFjiF2fNtuar3WvFTgr99ctEo4nCpjsfpdDpBgzHTkn5MgUgoIEb_mH-dw25gmbj-JQqJltl6vEFvyP6ceJTR9v5ZR-Kznp9YzqbnwjcgENspFhV_u2wZf5ue8K6RyInllyhmJncxYp_iBm00" alt="Діаграма use case адміністратора системи" /></a></p>
-<h3 id="Таблиця-для-Пройти-опитування"><a class="header" href="#Таблиця-для-Пройти-опитування">Таблиця для "Пройти опитування"</a></h3>
-<div class="table-wrapper"><table><thead><tr><th>ID</th><th>BUC.02.04</th></tr></thead><tbody>
-<tr><td>НАЗВА</td><td>Пройти опитування</td></tr>
-<tr><td>УЧАСНИКИ</td><td>Експерт, система</td></tr>
-<tr><td>ПЕРЕДУМОВИ</td><td>Експерт має бути зареєстрований у системі.</td></tr>
-<tr><td>РЕЗУЛЬТАТ</td><td>Відповіді експерта.</td></tr>
-<tr><td>ВИКЛЮЧНІ СИТУАЦІЇ</td><td>EX.02.04 У користувача зник інтернет.<br>EX.02.07 Експерт двічі натиснув на кнопку "Почати опитування".<br>EX.02.08 Користувач випадково оновив сторінку.</td></tr>
+<h2 id="Діаграма-діяльностей"><a class="header" href="#Діаграма-діяльностей">Діаграма діяльностей</a></h2>
+<p>Діаграмою діяльностей (або діаграмою активностей) називають тип діаграми в UML, який використовується для моделювання послідовності дій, логіки виконання процесів, бізнес-процесів або алгоритмів.</p>
+<p>Основними характеристиками діаграми діяльностей є:</p>
+<ul>
+<li>Зображення послідовність дій, які виконуються в системі або процесі.</li>
+<li>Моделювання як внутрішніх операцій класу, так і загальних бізнес-процесів.</li>
+<li>Візуалізація початкових та кінцевих точок, дії (активності), розгалуження (умови), паралельне виконання та з'єднання потоків управління.</li>
+</ul>
+<h3 id="Таблиця-для-Створити-акаунт-користувача"><a class="header" href="#Таблиця-для-Створити-акаунт-користувача">Таблиця для "Створити акаунт користувача"</a></h3>
+<div class="table-wrapper"><table><thead><tr><th><strong>ID</strong></th><th>UC.AC.001</th></tr></thead><tbody>
+<tr><td><strong>НАЗВА</strong></td><td>Реєстрація нового користувача</td></tr>
+<tr><td><strong>УЧАСНИКИ</strong></td><td>Кінцевий користувач, програмна система</td></tr>
+<tr><td><strong>ПЕРЕДУМОВИ</strong></td><td>Користувач ще не має створеного облікового запису в системі MESS</td></tr>
+<tr><td><strong>РЕЗУЛЬТАТ</strong></td><td>Створений та активований профіль користувача в системі</td></tr>
+<tr><td><strong>ВИКЛЮЧНІ СИТУАЦІЇ</strong></td><td>EX.01.01 Акаунт із вказаною електронною адресою вже зареєстрований. EX.01.02 Обов’язкові поля форми залишилися незаповненими. EX.01.03 Введений пароль не відповідає мінімальним критеріям безпеки. EX.01.04 Введені значення в полі "Пароль" та "Підтвердження пароля" не ідентичні.</td></tr>
 </tbody></table>
 </div>
-<p>[<img src="//www.plantuml.com/plantuml/dpng/TLBDhj905DxFKuouaOM46AC4DYH6dy5jXV8JQ4jAsR4ePQ4B8yOWnaHZV8En2bIuxNs5xxp2VP9xPbfwBmctgpDdllFzd4vx6bX-C7F6ub4mi1rREfO_5TFHq9rOlkN8TrPdrFUzcTjzvOqzNpxkzJgDnejxY3UU6nHtTVC98URuYWCjS8qjXHJDXL4HeedFY2b2HY4Ix6b9Quhe8ore9H5BdaYuZh355MrQ3Fy9nKTkui3LMbRmYuVVvrs9Z1KIPbWYXaAAb5QLbfR_VKS4DMUYRr0vXfiAEwqiy-7Ju4MsreKiJNoX3Vvn8qEiA-ECyKfY3tNEUZc4SMFuFXXmyg3hFmQrmTzS93vNraiIhXVOqX_s1u703xxPuOX4tpESYmEEz8bNjiqDDSLJoG4Y2g6ARiQ-RyBlj6Rgj5p7azTlQ_LdjVhpAa_ejPT_BcNM_qLMMkfO9VXb0MRJJBq_N_h9WZGXCvChPNz9ETwe2jljIfr8y9ln9gBDPtwTjm00" alt="UseCase діаграма для користувача" /></p>
-<h3 id="Таблиця-для-Обрати-категорію-експертизи"><a class="header" href="#Таблиця-для-Обрати-категорію-експертизи">Таблиця для "Обрати категорію експертизи"</a></h3>
-<div class="table-wrapper"><table><thead><tr><th>ID</th><th>BUC.02.07</th></tr></thead><tbody>
-<tr><td>НАЗВА</td><td>Обрати категорію експертизи</td></tr>
-<tr><td>УЧАСНИКИ</td><td>Експерт, система</td></tr>
-<tr><td>ПЕРЕДУМОВИ</td><td>Експерт розпочав проходження опитування.</td></tr>
-<tr><td>РЕЗУЛЬТАТ</td><td>Обрана категорія експертизи.</td></tr>
-<tr><td>ВИКЛЮЧНІ СИТУАЦІЇ</td><td>EX.02.09 Категорію не було вибрано.<br>EX.02.10 Категорія недоступна.</td></tr>
+<h3 id="Таблиця-для-Редагувати-дані-акаунта"><a class="header" href="#Таблиця-для-Редагувати-дані-акаунта">Таблиця для "Редагувати дані акаунта"</a></h3>
+<div class="table-wrapper"><table><thead><tr><th><strong>ID</strong></th><th>UC.AC.002</th></tr></thead><tbody>
+<tr><td><strong>НАЗВА</strong></td><td>Оновлення інформації профілю</td></tr>
+<tr><td><strong>УЧАСНИКИ</strong></td><td>Зареєстрований користувач, система</td></tr>
+<tr><td><strong>ПЕРЕДУМОВИ</strong></td><td>Користувач має чинний акаунт і перебуває в системі після авторизації</td></tr>
+<tr><td><strong>РЕЗУЛЬТАТ</strong></td><td>Дані профілю успішно змінено згідно із запитом</td></tr>
+<tr><td><strong>ВИКЛЮЧНІ СИТУАЦІЇ</strong></td><td>EX.01.05 Введені нові дані не відповідають встановленим правилам. EX.01.06 Неправильно введено поточний пароль, необхідний для підтвердження змін.</td></tr>
+</tbody></table>
+</div>
+<h3 id="Таблиця-для-Видалити-акаунт-користувача"><a class="header" href="#Таблиця-для-Видалити-акаунт-користувача">Таблиця для "Видалити акаунт користувача"</a></h3>
+<div class="table-wrapper"><table><thead><tr><th><strong>ID</strong></th><th>UC.AC.003</th></tr></thead><tbody>
+<tr><td><strong>НАЗВА</strong></td><td>Деактивація облікового запису користувачем</td></tr>
+<tr><td><strong>УЧАСНИКИ</strong></td><td>Авторизований користувач, система</td></tr>
+<tr><td><strong>ПЕРЕДУМОВИ</strong></td><td>Користувач увійшов у свій акаунт і має активний профіль у системі</td></tr>
+<tr><td><strong>РЕЗУЛЬТАТ</strong></td><td>Акаунт користувача успішно вилучено з системи</td></tr>
+<tr><td><strong>ВИКЛЮЧНІ СИТУАЦІЇ</strong></td><td>EX.01.06 Неправильне введення пароля при спробі підтвердити видалення профілю</td></tr>
+</tbody></table>
+</div>
+<h3 id="Таблиця-для-Створити-опитування"><a class="header" href="#Таблиця-для-Створити-опитування">Таблиця для "Створити опитування"</a></h3>
+<div class="table-wrapper"><table><thead><tr><th><strong>ID</strong></th><th>UC.SU.001</th></tr></thead><tbody>
+<tr><td><strong>НАЗВА</strong></td><td>Ініціювати створення нового опитування</td></tr>
+<tr><td><strong>УЧАСНИКИ</strong></td><td>Авторизований дослідник, система</td></tr>
+<tr><td><strong>ПЕРЕДУМОВИ</strong></td><td>Дослідник успішно виконав вхід до системи</td></tr>
+<tr><td><strong>РЕЗУЛЬТАТ</strong></td><td>Створено нове опитування, доступне для подальшого редагування чи публікації</td></tr>
+<tr><td><strong>ВИКЛЮЧНІ СИТУАЦІЇ</strong></td><td>EX.01.07 Не всі поля заповнено — питання або варіанти відповідей мають порожні значення. EX.01.08 У запитанні вказано ідентичні варіанти відповідей. EX.01.09 У створеному опитуванні відсутні питання.</td></tr>
+</tbody></table>
+</div>
+<h3 id="Таблиця-для-Видалити-опитування"><a class="header" href="#Таблиця-для-Видалити-опитування">Таблиця для "Видалити опитування"</a></h3>
+<div class="table-wrapper"><table><thead><tr><th><strong>ID</strong></th><th>UC.SU.002</th></tr></thead><tbody>
+<tr><td><strong>НАЗВА</strong></td><td>Видалення завершеного опитування</td></tr>
+<tr><td><strong>УЧАСНИКИ</strong></td><td>Дослідник (ініціатор дії), система</td></tr>
+<tr><td><strong>ПЕРЕДУМОВИ</strong></td><td>У дослідника є принаймні одне опитування зі статусом "закрите"</td></tr>
+<tr><td><strong>РЕЗУЛЬТАТ</strong></td><td>Обране опитування остаточно вилучено з системи</td></tr>
+<tr><td><strong>ВИКЛЮЧНІ СИТУАЦІЇ</strong></td><td>EX.02.02 Користувач двічі натискає кнопку видалення до завершення обробки першого запиту. EX.02.03 При підтвердженні наміру видалити опитування обрано опцію "Ні".</td></tr>
+</tbody></table>
+</div>
+<h3 id="Таблиця-для-Пройти-опитування"><a class="header" href="#Таблиця-для-Пройти-опитування">Таблиця для "Пройти опитування"</a></h3>
+<div class="table-wrapper"><table><thead><tr><th><strong>ID</strong></th><th>UC.AC.003</th></tr></thead><tbody>
+<tr><td><strong>НАЗВА</strong></td><td>Пройти опитування</td></tr>
+<tr><td><strong>УЧАСНИКИ</strong></td><td>Експерт, система</td></tr>
+<tr><td><strong>ПЕРЕДУМОВИ</strong></td><td>Експерт має бути зареєстрований у системі.</td></tr>
+<tr><td><strong>РЕЗУЛЬТАТ</strong></td><td>Відповіді експерта.</td></tr>
+<tr><td><strong>ВИКЛЮЧНІ СИТУАЦІЇ</strong></td><td>EX.02.04 У користувача зник інтернет.<br>EX.02.07 Експерт двічі натиснув на кнопку "Почати опитування".<br>EX.02.08 Користувач випадково оновив сторінку.</td></tr>
 </tbody></table>
 </div>
 <h3 id="Таблиця-для-Перегляд-опитувань"><a class="header" href="#Таблиця-для-Перегляд-опитувань">Таблиця для "Перегляд опитувань"</a></h3>
-<div class="table-wrapper"><table><thead><tr><th>ID</th><th>BUC.02.06</th></tr></thead><tbody>
-<tr><td>НАЗВА</td><td>Перегляд опитувань</td></tr>
-<tr><td>УЧАСНИКИ</td><td>Експерт, система</td></tr>
-<tr><td>ПЕРЕДУМОВИ</td><td>Експерт авторизований у системі.</td></tr>
-<tr><td>РЕЗУЛЬТАТ</td><td>Відображення списку опитувань.</td></tr>
-<tr><td>ВИКЛЮЧНІ СИТУАЦІЇ</td><td>EX.02.05 Не вдалося отримати дані з бази.</td></tr>
+<div class="table-wrapper"><table><thead><tr><th><strong>ID</strong></th><th>UC.AC.004</th></tr></thead><tbody>
+<tr><td><strong>НАЗВА</strong></td><td>Перегляд опитувань</td></tr>
+<tr><td><strong>УЧАСНИКИ</strong></td><td>Експерт, система</td></tr>
+<tr><td><strong>ПЕРЕДУМОВИ</strong></td><td>Експерт авторизований у системі.</td></tr>
+<tr><td><strong>РЕЗУЛЬТАТ</strong></td><td>Відображення списку опитувань.</td></tr>
+<tr><td><strong>ВИКЛЮЧНІ СИТУАЦІЇ</strong></td><td>EX.02.05 Не вдалося отримати дані з бази.</td></tr>
+</tbody></table>
+</div>
+<h3 id="Таблиця-для-Обрати-категорію-експертизи"><a class="header" href="#Таблиця-для-Обрати-категорію-експертизи">Таблиця для "Обрати категорію експертизи"</a></h3>
+<div class="table-wrapper"><table><thead><tr><th><strong>ID</strong></th><th>UC.EX.001</th></tr></thead><tbody>
+<tr><td><strong>НАЗВА</strong></td><td>Обрати категорію експертизи</td></tr>
+<tr><td><strong>УЧАСНИКИ</strong></td><td>Експерт, система</td></tr>
+<tr><td><strong>ПЕРЕДУМОВИ</strong></td><td>Експерт розпочав проходження опитування.</td></tr>
+<tr><td><strong>РЕЗУЛЬТАТ</strong></td><td>Обрана категорія експертизи.</td></tr>
+<tr><td><strong>ВИКЛЮЧНІ СИТУАЦІЇ</strong></td><td>EX.02.09 Категорію не було вибрано.<br>EX.02.10 Категорія недоступна.</td></tr>
 </tbody></table>
 </div>
 <h3 id="Таблиця-для-Змінити-відповідь"><a class="header" href="#Таблиця-для-Змінити-відповідь">Таблиця для "Змінити відповідь"</a></h3>
-<div class="table-wrapper"><table><thead><tr><th>ID</th><th>BUC.02.05</th></tr></thead><tbody>
-<tr><td>НАЗВА</td><td>Змінити відповідь</td></tr>
-<tr><td>УЧАСНИКИ</td><td>Експерт, система</td></tr>
-<tr><td>ПЕРЕДУМОВИ</td><td>Експерт вже пройшов опитування, зміна дозволена.</td></tr>
-<tr><td>РЕЗУЛЬТАТ</td><td>Оновлені відповіді експерта.</td></tr>
-<tr><td>ВИКЛЮЧНІ СИТУАЦІЇ</td><td>EX.02.04 У користувача зник інтернет.<br>EX.02.08 Користувач випадково оновив сторінку.</td></tr>
+<div class="table-wrapper"><table><thead><tr><th><strong>ID</strong></th><th>UC.EX.002</th></tr></thead><tbody>
+<tr><td><strong>НАЗВА</strong></td><td>Змінити відповідь</td></tr>
+<tr><td><strong>УЧАСНИКИ</strong></td><td>Експерт, система</td></tr>
+<tr><td><strong>ПЕРЕДУМОВИ</strong></td><td>Експерт вже пройшов опитування, зміна дозволена.</td></tr>
+<tr><td><strong>РЕЗУЛЬТАТ</strong></td><td>Оновлені відповіді експерта.</td></tr>
+<tr><td><strong>ВИКЛЮЧНІ СИТУАЦІЇ</strong></td><td>EX.02.04 У користувача зник інтернет.<br>EX.02.08 Користувач випадково оновив сторінку.</td></tr>
 </tbody></table>
 </div>
 <h3 id="Таблиця-для-Зберегти"><a class="header" href="#Таблиця-для-Зберегти">Таблиця для "Зберегти"</a></h3>
-<div class="table-wrapper"><table><thead><tr><th>ID</th><th>BUC.02.08</th></tr></thead><tbody>
-<tr><td>НАЗВА</td><td>Зберегти відповідь</td></tr>
-<tr><td>УЧАСНИКИ</td><td>Експерт, система</td></tr>
-<tr><td>ПЕРЕДУМОВИ</td><td>Експерт відповів на питання.</td></tr>
-<tr><td>РЕЗУЛЬТАТ</td><td>Збережена відповідь експерта.</td></tr>
-<tr><td>ВИКЛЮЧНІ СИТУАЦІЇ</td><td>EX.02.11 Не вдалося зберегти відповідь через технічну помилку.</td></tr>
+<div class="table-wrapper"><table><thead><tr><th><strong>ID</strong></th><th>UC.EX.003</th></tr></thead><tbody>
+<tr><td><strong>НАЗВА</strong></td><td>Зберегти відповідь</td></tr>
+<tr><td><strong>УЧАСНИКИ</strong></td><td>Експерт, система</td></tr>
+<tr><td><strong>ПЕРЕДУМОВИ</strong></td><td>Експерт відповів на питання.</td></tr>
+<tr><td><strong>РЕЗУЛЬТАТ</strong></td><td>Збережена відповідь експерта.</td></tr>
+<tr><td><strong>ВИКЛЮЧНІ СИТУАЦІЇ</strong></td><td>EX.02.11 Не вдалося зберегти відповідь через технічну помилку.</td></tr>
 </tbody></table>
 </div>
 <h3 id="Таблиця-для-Завершити-опитування"><a class="header" href="#Таблиця-для-Завершити-опитування">Таблиця для "Завершити опитування"</a></h3>
-<div class="table-wrapper"><table><thead><tr><th>ID</th><th>BUC.02.09</th></tr></thead><tbody>
-<tr><td>НАЗВА</td><td>Завершити опитування</td></tr>
-<tr><td>УЧАСНИКИ</td><td>Експерт, система</td></tr>
-<tr><td>ПЕРЕДУМОВИ</td><td>Експерт відповів на всі запитання.</td></tr>
-<tr><td>РЕЗУЛЬТАТ</td><td>Опитування завершено, дані збережено.</td></tr>
-<tr><td>ВИКЛЮЧНІ СИТУАЦІЇ</td><td>EX.02.12 Не всі відповіді збережено.<br>EX.02.13 Втрачено з'єднання з сервером.</td></tr>
+<div class="table-wrapper"><table><thead><tr><th><strong>ID</strong></th><th>UC.EX.004</th></tr></thead><tbody>
+<tr><td><strong>НАЗВА</strong></td><td>Завершити опитування</td></tr>
+<tr><td><strong>УЧАСНИКИ</strong></td><td>Експерт, система</td></tr>
+<tr><td><strong>ПЕРЕДУМОВИ</strong></td><td>Експерт відповів на всі запитання.</td></tr>
+<tr><td><strong>РЕЗУЛЬТАТ</strong></td><td>Опитування завершено, дані збережено.</td></tr>
+<tr><td><strong>ВИКЛЮЧНІ СИТУАЦІЇ</strong></td><td>EX.02.12 Не всі відповіді збережено.<br>EX.02.13 Втрачено з'єднання з сервером.</td></tr>
 </tbody></table>
 </div>
 <h3 id="Таблиця-для-Підтвердити-дію"><a class="header" href="#Таблиця-для-Підтвердити-дію">Таблиця для "Підтвердити дію"</a></h3>
-<div class="table-wrapper"><table><thead><tr><th>ID</th><th>BUC.02.10</th></tr></thead><tbody>
-<tr><td>НАЗВА</td><td>Підтвердити дію</td></tr>
-<tr><td>УЧАСНИКИ</td><td>Експерт, система</td></tr>
-<tr><td>ПЕРЕДУМОВИ</td><td>Виконується дія, що потребує підтвердження.</td></tr>
-<tr><td>РЕЗУЛЬТАТ</td><td>Дія підтверджена та виконана.</td></tr>
-<tr><td>ВИКЛЮЧНІ СИТУАЦІЇ</td><td>EX.02.14 Підтвердження не отримано.<br>EX.02.15 Дія скасована користувачем.</td></tr>
+<div class="table-wrapper"><table><thead><tr><th><strong>ID</strong></th><th>UC.EX.005</th></tr></thead><tbody>
+<tr><td><strong>НАЗВА</strong></td><td>Підтвердити дію</td></tr>
+<tr><td><strong>УЧАСНИКИ</strong></td><td>Експерт, система</td></tr>
+<tr><td><strong>ПЕРЕДУМОВИ</strong></td><td>Виконується дія, що потребує підтвердження.</td></tr>
+<tr><td><strong>РЕЗУЛЬТАТ</strong></td><td>Дія підтверджена та виконана.</td></tr>
+<tr><td><strong>ВИКЛЮЧНІ СИТУАЦІЇ</strong></td><td>EX.02.14 Підтвердження не отримано.<br>EX.02.15 Дія скасована користувачем.</td></tr>
 </tbody></table>
 </div>
                     </main>
