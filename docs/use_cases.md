@@ -210,5 +210,15 @@
 ### Діаграма до "Підтвердити дію"
 [![Підтвердити дію](https://img.plantuml.biz/plantuml/svg/ZLBBQi905Dq7yWzJkssj4HUY8hwNtHMwZJMeg8bC8jsuy06MRYeKwweF2ls0L8mDFk8ltFcZtXkjM5sqYy3adiUSUvYKQQdSQZNgidHYLRI6nXegDsN9h5NrfihL1YkgDxKoDrfwAMlK3SvEyqfEAHJsAMdEZTij6aahaMXs7xqqB2rpQ5A8PZAvq17Du2MD7pZ9KXkUO2wwi0P7T4IlZJ9AJL0C1h0IOp70xq6C64pfSCR4FNWC1PxeYGuuy2dwXAx561azc90JJ666q0eDXd6oUlN9BYmtv2-mqS4LFOOS-o_n2zY8kHXpZgSH2y3R0TybF13VRFHEL1mui0IxJGOVICSj_nFq4KFEmSF__cvdtrV74XclbYjOJgAOX6SapM21z8aOCtGZtGARkllnYoKkYabPEcTNsQ0I3kQlWo657KNVNKzLE6nRgqlPSU3zreSPZ33Ha6sxw6A8YK_44Z4sAMbtqQUn7sKfIvfUOXIVrZ0jeobBAHpvB_CR)](https://editor.plantuml.com/uml/ZLBBQi905Dq7yWzJkssj4HUY8hwNtHMwZJMeg8bC8jsuy06MRYeKwweF2ls0L8mDFk8ltFcZtXkjM5sqYy3adiUSUvYKQQdSQZNgidHYLRI6nXegDsN9h5NrfihL1YkgDxKoDrfwAMlK3SvEyqfEAHJsAMdEZTij6aahaMXs7xqqB2rpQ5A8PZAvq17Du2MD7pZ9KXkUO2wwi0P7T4IlZJ9AJL0C1h0IOp70xq6C64pfSCR4FNWC1PxeYGuuy2dwXAx561azc90JJ666q0eDXd6oUlN9BYmtv2-mqS4LFOOS-o_n2zY8kHXpZgSH2y3R0TybF13VRFHEL1mui0IxJGOVICSj_nFq4KFEmSF__cvdtrV74XclbYjOJgAOX6SapM21z8aOCtGZtGARkllnYoKkYabPEcTNsQ0I3kQlWo657KNVNKzLE6nRgqlPSU3zreSPZ33Ha6sxw6A8YK_44Z4sAMbtqQUn7sKfIvfUOXIVrZ0jeobBAHpvB_CR)
 
+## Посилання 
+**Нижче наведено посилання на використані джерела:**
 
+Більше про діаграми прецедентів:
+* [Джерело №1](https://uk.wikipedia.org/wiki/%D0%94%D1%96%D0%B0%D0%B3%D1%80%D0%B0%D0%BC%D0%B0_%D0%BF%D1%80%D0%B5%D1%86%D0%B5%D0%B4%D0%B5%D0%BD%D1%82%D1%96%D0%B2)
+* [Джерело №2](https://lvivqaclub.blogspot.com/2008/10/use-case-uml-diagram.html)
+* [Джерело №3](https://evergreens.com.ua/ua/articles/uml-diagrams.html)
+
+Більше про діаграми діяльності:
+* [Джерело №1](https://uk.wikipedia.org/wiki/%D0%94%D1%96%D0%B0%D0%B3%D1%80%D0%B0%D0%BC%D0%B0_%D0%B4%D1%96%D1%8F%D0%BB%D1%8C%D0%BD%D0%BE%D1%81%D1%82%D1%96)
+* [Джерело №2](https://www.guru99.com/uk/uml-activity-diagram.html)
 
