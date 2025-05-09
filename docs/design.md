@@ -165,3 +165,14 @@ left to right direction
 ![ER-модель](img/ER-model.png)
 ## Реляційна схема
 
+<center style="
+    border-radius:4px;
+    border: 1px solid #cfd7e6;
+    box-shadow: 0 1px 3px 0 rgba(89,105,129,.05), 0 1px 1px 0 rgba(0,0,0,.025);
+    padding: 1em;"
+>
+
+![Реляційна схема](img/relational_scheme.png)
+
+</center>
+
