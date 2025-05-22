@@ -156,8 +156,75 @@
                 <div id="content" class="content">
                     <main>
                         <h1 id="Тестування-працездатності-системи"><a class="header" href="#Тестування-працездатності-системи">Тестування працездатності системи</a></h1>
-<p><em>В цьому розділі необхідно вказати засоби тестування, навести вихідні коди тестів та результати тестування.</em>
-trtfg</p>
+<h2 id="post---ЗАПИТ"><a class="header" href="#post---ЗАПИТ">🔸POST - ЗАПИТ</a></h2>
+<h3 id="---create-role---"><a class="header" href="#---create-role---"><em>-- Create Role --</em></a></h3>
+<pre><code class="language-bash">{
+  "name": "Expert",
+  "description": "Responsible for creating and evaluating quizzes"
+}
+</code></pre>
+<p><img src="https://github.com/user-attachments/assets/79bfe40e-13e1-4a2c-9639-ffe26f31532a" alt="image" /></p>
+<h3 id="---create-user---"><a class="header" href="#---create-user---"><em>-- Create User --</em></a></h3>
+<pre><code class="language-bash">{
+  "email": "diana.s@gmail.com",
+  "password": "123!",
+  "name": "Diana",
+  "surname": "Siukalo",
+  "nickname": "dirrialss"
+}
+</code></pre>
+<p><img src="https://github.com/user-attachments/assets/f87b2d55-1bed-49ae-baf7-46af2a4ea7b3" alt="image" /></p>
+<h3 id="---create-quiz---"><a class="header" href="#---create-quiz---"><em>-- Create Quiz --</em></a></h3>
+<pre><code class="language-bash">{
+  "name": "Mental Well-being Assessment",
+  "description": "A short quiz to evaluate a person's current emotional and psychological state",
+  "created_by": 1,
+  "User_id": 1
+}
+</code></pre>
+<p><img src="https://github.com/user-attachments/assets/201292d5-9fb0-448a-a738-c830610b67a8" alt="image" /></p>
+<h2 id="get---ЗАПИТ"><a class="header" href="#get---ЗАПИТ">🔸GET - ЗАПИТ</a></h2>
+<h3 id="---read-roles---"><a class="header" href="#---read-roles---"><em>-- Read Roles --</em></a></h3>
+<p><img src="https://github.com/user-attachments/assets/53138daa-23af-4816-9fda-b4bd1b79479e" alt="image" /></p>
+<h3 id="---read-users---"><a class="header" href="#---read-users---"><em>-- Read Users --</em></a></h3>
+<p><img src="https://github.com/user-attachments/assets/209f7d4d-268b-4a2f-88d8-7ccb484b9b2d" alt="image" /></p>
+<h3 id="---read-quizzes---"><a class="header" href="#---read-quizzes---"><em>-- Read Quizzes --</em></a></h3>
+<p><img src="https://github.com/user-attachments/assets/64bb770b-ed27-441e-bc47-e94ba368d50e" alt="image" /></p>
+<h2 id="put---ЗАПИТ"><a class="header" href="#put---ЗАПИТ">🔸PUT - ЗАПИТ</a></h2>
+<h3 id="---update-role---"><a class="header" href="#---update-role---"><em>-- Update Role --</em></a></h3>
+<pre><code class="language-bash">{
+  "name": "Diana",
+  "description": "Has full access to the system"
+}
+
+</code></pre>
+<p><img src="https://github.com/user-attachments/assets/917a381a-97f8-4601-aaa8-56607176748f" alt="image" /></p>
+<h3 id="---update-user---"><a class="header" href="#---update-user---"><em>-- Update User --</em></a></h3>
+<pre><code class="language-bash">{
+  "email": "diana.s@gmail.com",
+  "password": "123!",
+  "name": "Siukalo",
+  "surname": "Siukalo",
+  "nickname": "dirrialss"
+}
+</code></pre>
+<p><img src="https://github.com/user-attachments/assets/5d5539be-a323-4c4f-844f-7c44776a24dd" alt="image" /></p>
+<h3 id="---update-quiz---"><a class="header" href="#---update-quiz---"><em>-- Update Quiz --</em></a></h3>
+<pre><code class="language-bash">{
+  "name": "Mental Well-being Assessment",
+  "description": "Test",
+  "created_by": 1,
+  "User_id": 2
+}
+</code></pre>
+<p><img src="https://github.com/user-attachments/assets/fba3f5d8-7ee0-450d-978b-d1a538d86d21" alt="image" /></p>
+<h2 id="delete---ЗАПИТ"><a class="header" href="#delete---ЗАПИТ">🔸DELETE - ЗАПИТ</a></h2>
+<h3 id="---delete-role---"><a class="header" href="#---delete-role---"><em>-- Delete Role --</em></a></h3>
+<p><img src="https://github.com/user-attachments/assets/84031767-ea95-49ff-a943-cf684077d3ea" alt="image" /></p>
+<h3 id="---delete-user---"><a class="header" href="#---delete-user---"><em>-- Delete User --</em></a></h3>
+<p><img src="https://github.com/user-attachments/assets/d89cbaa1-63de-47f3-b9ad-1d7c96ba5391" alt="image" /></p>
+<h3 id="---delete-quiz---"><a class="header" href="#---delete-quiz---"><em>-- Delete Quiz --</em></a></h3>
+<p><img src="https://github.com/user-attachments/assets/1237555e-71f5-4fdb-91f7-90be214a0131" alt="image" /></p>
 
                     </main>
 
